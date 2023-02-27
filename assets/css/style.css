@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: white;
+    background-image: url(/assets/images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-position: left fixed;
+    background-size: 20% 300%;
+}
+main {
+    display: flex;
+}
+.frontcard {
+    background-image: url(/assets/images/bg-card-front.png);
+    height: 247px;
+    width: 449px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin: 150px 0 0 190px;  
+}
+.logo {
+    overflow: hidden;
+    margin: 1.2em 0 0 1.5em;
+}
+.card-number {
+    font-weight: 100;
+    margin: 1.5em 0 0 0.7em;
+    padding: 20px;
+}
+.infos {
+    padding: 0 43px 0 40px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 100;
+}
+.backcard {
+    background-image: url(/assets/images/bg-card-back.png);
+    background-repeat: no-repeat;
+    height: 247px;
+    width: 449px;
+    margin: 30px 0 0 280px;
+    
+}
+.formdate {
+    color: hsl(278, 68%, 11%);
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+}
+.name {
+    padding: 5px;
+    width: 350px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border-style: none;
+    border: solid 1px gray;
+}
+.name:target {
+    border: solid 1px hsl(278, 81%, 36%);
+}
+.validate-info {
+    
+}
+.attribution {
+    color: hsl(278, 68%, 11%);
+    margin-top: 30px;
+}
+

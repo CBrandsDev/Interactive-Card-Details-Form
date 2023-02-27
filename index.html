@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="cards">
+    <div class="frontcard">
+      <img class="logo" src="./assets/images/card-logo.svg" alt="logo">
+      <h1 class="card-number">0000 0000 0000 0000</h1>
+      <div class="infos">
+        <p class="card-name"> Jane Appleseed</p>
+        <p class="card-validate"> 00/00</p>
+      </div>
+    </div>
+    <div class="backcard">
+      <p class="code">000</p>
+    </div>
+  </div>
+    <div class="form-container">
+      <div class="name-info">
+        <h3 class="formdate">Cardholder Name</h3>
+        <input type="text" class="name required" id="name" placeholder="e.g. Jane Appleseed" oninput="nameValidate()">
+      </div>
+      <div class="number-info">
+        <h3 class="formdate">Card Number</h3>
+        <input type="text" class="number required" id="number" placeholder="e.g. 1234 5678 9123 0000" oninput="numberValidate()">
+      </div>
+      <div class="validate-info">
+        <h3 class="formdate">Exp. Date (MM/YY)</h3>
+        <input type="text" class="month required" id="month" placeholder="MM" oninput="monthValidate()">
+        <input type="text" class="year required" id="year" placeholder="YY" oninput="yearValidate()">
+        <h3 class="formdate">CVC</h3>
+        <input type="text" class="cvc required" id="cvc" placeholder="e.g. 123" oninput="cvcValidate()">
+      </div>
+      <button class="confirm" id="confirm">Confirm</button>
+    </div>
+  </main>
+  <!-- Completed state start
+  Thank you!
+  We've added your card details
+  Continue -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/CBrandsDev">Calil Brandão</a>.
+    <script src="./script.js"></script>
+  </div>
+</body>
+</html>
