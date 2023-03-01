@@ -12,8 +12,7 @@ body {
     color: white;
     background-color: white;
     background-image: url(/assets/images/bg-main-desktop.png);
-    background-repeat: no-repeat;
-    background-position: left;
+    background-repeat: no-repeat;   
     background-size: 20% 300%;
 }
 main {
@@ -126,5 +125,9 @@ main {
     justify-content: center;
     color: hsl(278, 68%, 11%);
     margin-top: 30px;
+}
+
+@media screen and (max-width: 660px) {
+    
 }
 
